@@ -1,0 +1,238 @@
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Jersey 25', sans-serif;
+    background: rgba(0, 0, 0, 0.6) url("/Images/BG.gif") no-repeat center center;  
+    background-size: 100% 120%; 
+    background-attachment: fixed;
+    background-blend-mode: darken;
+   
+  }
+  
+  header{
+    margin-top: 30px;
+    height: 25vh;
+    font-size: 2rem;
+  
+  }
+  
+  .logo {
+    height: 70px;
+    padding: 2px 10px;
+    margin-right: 495px;
+  }
+  
+  .icon-bar{
+    background: #00bfff;
+  }
+  
+  nav ul {
+    font-family: sans-serif;
+  
+  }
+  
+  nav ul li a {
+    
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    padding: 10px 0px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a.active {
+    background-color: #00bfff;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #00bfff;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  main {
+    height: calc(100vh - 150px);
+    
+  }
+  
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .container form{
+    filter: drop-shadow( 0px 0px 0px #00bfff);
+    width: 670px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+  }
+  
+  .container form h1{
+    color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+  }
+  
+  .container form input{
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+    color: #00bfff;
+  }
+  
+  .container form input::placeholder{
+    color:#ddd;
+  }
+  
+  .container form #lastname,
+  .container form #mobile{
+    margin-left: 20px;
+  }
+  
+  .container form h4{
+    color: #fff;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+  }
+  
+  .container form textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #00bfff;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    max-width: 600px;
+    min-width: 600px;
+    max-width: 80px;
+    max-height: 80px;
+  }
+  
+  textarea::-webkit-scrollbar{
+    width: 1em;
+  }
+  
+  textarea::-webkit-scrollbar-thumb{
+    background-color: rgba(194, 194, 194, 0.713);
+  }
+  
+  .container form #button{
+    border: none;
+    width: 100px;
+    padding: 0;
+    background: #fff;
+    color: #333;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+  }
+  
+  .container form #button:hover{
+    opacity: 0.7;
+  }
+  
+  @media (max-width: 768px) {
+    .container form {
+      width: 90%;
+      height: auto;
+    }
+  
+    .container form input, 
+    .container form textarea {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .logo {
+      margin-right: 0;
+    }
+  
+    nav ul {
+      text-align: center;
+    }
+  
+    nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+  
+    header {
+      height: 15vh;
+    }
+  
+    .container form h1, .container form h4 {
+      width: 100%;
+    }
+  
+    .container form #button {
+      margin-right: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+  
+    header {
+      height: 12vh; 
+    }
+  
+    .logo {
+      height: 40px;
+    }
+  
+    nav ul li a {
+      font-size: 1.2rem;
+    }
+  
+    .container form h1 {
+      font-size: 1.8rem;
+      
+    }
+  
+    .container form h4 {
+      font-size: 1rem;
+    }
+  
+    .container form input, 
+    .container form textarea {
+      font-size: 1rem;
+    }
+  
+    .container form #button {
+      font-size: 1.2rem;
+    }
+  }
+  

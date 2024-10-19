@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Jersey 25', sans-serif; 
+    background: rgba(0, 0, 0, 0.6) url("/Images/BG.gif") no-repeat center center;
+    background-size: 100% 120%;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+}
+
+header {
+    margin-top: 30px;
+    height: 10vh;
+    font-size: 2rem;
+}
+
+.logo {
+    height: 70px;
+    padding: 2px 10px;
+}
+
+.icon-bar {
+    background: #00bfff;
+}
+
+nav ul {
+    font-family: sans-serif;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    padding: 10px 0px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a.active {
+    background-color: #00bfff;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #00bfff;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.team-content {
+    filter: drop-shadow( 0px 0px 3px #00DBFE);
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem; 
+    text-align: center;
+    margin-top: 2rem; 
+}
+
+.team-content.waterfall {
+    grid-template-columns: 1fr; 
+    margin-top: 1rem; 
+}
+
+.team-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 10px; 
+}
+
+.box {
+    display: block; 
+    padding: 12px; 
+    background: rgba(0, 191, 255, 0.1);
+    border-radius: 10px; 
+    transition: all 0.38s ease;
+    max-width: 160px;
+    margin: 0 auto; 
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.box h3 {
+    font-size: 18px; 
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 5px; 
+}
+
+.box h5 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #b7b4bb;
+    margin-bottom: 5px; 
+    letter-spacing: 1px; 
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+        margin-right: 0;
+    }
+
+    nav ul li {
+        margin-bottom: 10px; 
+
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+     .team-content {
+        grid-template-columns: 1fr;
+         
+    }
+
+    #teamSection {
+        transition: margin-top 0.3s ease; 
+        margin-bottom: 50px;
+    }
+
+}
