@@ -1,9 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+20&family=Jersey+25&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <span class="material-symbols-outlined">
+                menu
+                </span>
+        </label>
+        <img src="logo.png" class="logo">
+        <ul>
+            <li><a class="nav-list" href="#about">Home</a></li>
+            <li><a class="nav-list" href="#certificates">Our Team</a></li>
+            <li><a class="nav-list" href="#about">About Me</a></li>
+            <li><a class="nav-list" href="#certificates">Certificate</a></li>
+            <li><a class="nav-list" href="#skills">Skills</a></li>
+        </ul>
+     </nav>
+    
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="about-icon">
+          <ul>
+            <li>
+               <div class="circle">
+                   <img src="mail.png">
+               </div>
+            </li>
+            <li>
+                <div class="circle">
+                    <img src="instagram.png">
+                </div>
+             </li>
+             <li>
+                <div class="circles">
+                      <img src="social.png">
+                </div>
+             </li>
+          </ul>
+        </div>
+        <div class="about-container">
+            <div class="about-text">
+             <h3>Hello, It's Me</h3><h1>KIMBERLY SUAREZ</h1>
+             <h2>And I'm a Student Leader</h2>
+             <p>A 20-year-old aspiring leader in the CSU Information Systems Society, a service-oriented
+                 organization. As a leader, I believe in inspiring and guiding others towards a common goal. 
+                 I strive to possess qualities such as vision, empathy, and strong communication skills. By
+                  creating a positive environment, I empower individuals to contribute their best and achieve 
+                  our shared objectives.</p>
+                 <br>
+                 <div class="btn">
+                    <button type="button">See More...</button>
+                  </div>
+                </div>
+            </div>
+        <div class="about-image">
+            <img src="kimmy.png" alt="Kimberly Suarez" class="about-image">
+        </div>
+
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates-section">
+        <div class="certificate">
+            <img src="cert.png" alt="Leadership Award">
+        </div>
+
+        <div class="certificate">
+            <img src="certificate.png" alt="Technology Training">
+        </div>
+
+        <div class="certificate">
+            <img src="CERTZ.png" alt="Business Training">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="skills-container">
+            <div class="skill">
+                <span>Leadership Skills:</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+                <span class="percentage">90%</span>
+            </div>
+
+            <div class="skill">
+                <span>Interpersonal Skills:</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%"></div>
+                </div>
+                <span class="percentage">85%</span>
+            </div>
+
+            <div class="skill">
+                <span>Decision-Making Skills:</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%"></div>
+                </div>
+                <span class="percentage">80%</span>
+            </div>
+
+            <div class="skill">
+                <span>Creativity Skills:</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+                <span class="percentage">90%</span>
+            </div>
+
+            <div class="skill">
+                <span>Technical Skills:</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%"></div>
+                </div>
+                <span class="percentage">75%</span>
+            </div>
+        </div>
+    </section>
+    <!-- Optional JavaScript for Progress Bar Animation -->
+    <script src="script.js"></script>
+</body>
 </html>
+
