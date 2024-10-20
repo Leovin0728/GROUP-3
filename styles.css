@@ -184,7 +184,7 @@ section{
 
 video#gif{
     font-family: 'jersey 25', sans-serif;
-    background:  rgba(0, 0, 0, 0.5) url(BG.gif) no-repeat center center;
+    background:  rgba(0, 0, 0, 0.5) url(IMAGES/BG.gif) no-repeat center center;
     background-size: 100% 120%;
     background-attachment: fixed;
     background-blend-mode: darken;
