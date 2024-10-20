@@ -532,7 +532,9 @@ span{
         font-size: 36px;
     }
 
- 
+    #more {
+        display: none; 
+    }
 
 
         /*-------- PROJECTSS RESPONSIVE EYY CHARCHAR -------*/
@@ -587,11 +589,11 @@ span{
         }
     
         .more-layer h4 {
-            font-size: 16px;
+            font-size: 14px;
         }
     
         .more-layer p {
-            font-size: 12px; 
+            font-size: 11px; 
         }
     
         .more{
@@ -639,6 +641,11 @@ span{
 .work {
     scroll-behavior: smooth;
 }
+
+#work {
+    display: none; 
+}
+
 
 .work-container {
     display: flex;
@@ -949,7 +956,7 @@ span{
     }
     
     .progress {
-        height: 20px;
+        height: 18px;
     }
 
     .pe-md-3 {
@@ -961,12 +968,13 @@ span{
     }
 
     .skill-label {
-        font-size: 1.8rem; 
+        font-size: 1.5rem; 
     }   
 
     .row .text-start {
-        font-size: 1.6rem; 
-        font-weight: 200; 
+        font-size: 1.4rem; 
+        font-weight: 400;
+        padding-right: 5px; 
     } 
 
   }

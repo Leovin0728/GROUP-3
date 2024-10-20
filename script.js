@@ -1,74 +1,71 @@
-
 window.onload = function () {
     const navLinks = document.querySelectorAll('.navbar a');
-    const checkBox = document.getElementById('check'); 
-    const icons = document.querySelector('.icons'); 
+    const moreSection = document.getElementById("more");
+    const workSection = document.getElementById("work");
+    const seeMoreBtn = document.getElementById("see-more-btn");
+    const navbarLinks = document.querySelectorAll('.navbar a');
 
-    // Smooth scroll and active link functionality
+
+    navbarLinks.forEach(link => {
+    link.addEventListener('click', () => {
+    const checkbox = document.getElementById('check');
+    
+        checkbox.checked = false;
+    });
+});
+
+    
+    moreSection.style.display = "none";
+    workSection.style.display = "none";
+
     navLinks.forEach(link => {
         link.addEventListener('click', function (event) {
-            event.preventDefault(); 
-            navLinks.forEach(nav => nav.classList.remove('active')); 
-            this.classList.add('active'); 
+            event.preventDefault();
+            navLinks.forEach(nav => nav.classList.remove('active'));
+            this.classList.add('active');
 
-            const targetSection = document.querySelector(this.getAttribute('href')); 
-            if (targetSection) { 
-                targetSection.scrollIntoView({ behavior: 'smooth' }); 
-            } 
-        }); 
+            const targetSection = document.querySelector(this.getAttribute('href'));
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
     });
 
-    // Animate progress bars
-    const progressBars = document.querySelectorAll('.progress'); 
-    progressBars.forEach(bar => { 
-        let width = 0; 
-        const finalWidth = bar.style.width; 
-        bar.style.width = "0%"; 
-
-        const interval = setInterval(() => { 
-            if (width >= parseInt(finalWidth)) { 
-                clearInterval(interval); 
-            } else { 
-                width++; 
-                bar.style.width = width + "%"; 
-            } 
-        }, 10); 
-    });
-
-    // Show Projects and Work Experience sections 
-    const seeMoreBtn = document.querySelector(".btn"); 
-    const moreSection = document.getElementById("more"); 
-    const workSection = document.getElementById("work"); 
-
-    seeMoreBtn.addEventListener("click", function (event) { 
-        event.preventDefault();   
+    // See More button functionality
+    seeMoreBtn.addEventListener("click", function (event) {
+        event.preventDefault();
         moreSection.style.display = "block"; 
+        workSection.style.display = "none"; 
+        moreSection.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // Show Work Experiences section when the corresponding button is clicked
+    const workExperienceBtn = document.querySelector('.main-text a[href="#work"]');
+    workExperienceBtn.addEventListener("click", function (event) {
+        event.preventDefault();
         workSection.style.display = "block"; 
-        seeMoreBtn.style.display = "none"; 
-        moreSection.scrollIntoView({ behavior: 'smooth' }); 
-    }); 
+        moreSection.style.display = "none"; 
+        workSection.scrollIntoView({ behavior: 'smooth' });
+    });
 
-    // Back Button Functionality 
-    const backBtns = document.querySelectorAll('.back-btn'); 
+    // Show Projects section when the corresponding button is clicked
+    const myProjectsBtn = document.querySelector('.main-work a[href="#more"]');
+    myProjectsBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        moreSection.style.display = "block"; 
+        workSection.style.display = "none"; 
+        moreSection.scrollIntoView({ behavior: 'smooth' });
+    });
 
-    backBtns.forEach(backBtn => { 
-        backBtn.addEventListener("click", function (event) { 
-            event.preventDefault(); 
+    // Back Button Functionality
+    const backBtns = document.querySelectorAll('.back-btn');
+    backBtns.forEach(backBtn => {
+        backBtn.addEventListener("click", function (event) {
+            event.preventDefault();
             moreSection.style.display = "none"; 
             workSection.style.display = "none"; 
-            seeMoreBtn.style.display = "inline-block"; 
-
-            const aboutSection = document.getElementById("about"); 
-            aboutSection.scrollIntoView({ behavior: 'smooth' }); 
-        }); 
-    }); 
-
-    // For certificates animation 
-    const certificates = document.querySelectorAll('.certificate-card'); 
-    certificates.forEach((certificate, index) => { 
-        setTimeout(() => { 
-            certificate.style.opacity = 1; 
-            certificate.style.transform = 'translateY(0)'; 
-        }, index * 200); 
-    }); 
-}; 
+            const aboutSection = document.getElementById("about");
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+};
