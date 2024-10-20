@@ -1,0 +1,402 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+body {
+    margin: 0;
+    background: rgba(0, 0, 0, 0.6) url("/Images/BG.gif") no-repeat center center;
+    background-size: 100% 120%;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    color: white;
+}
+
+nav{
+    background: transparent;
+    height: 80px;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+}
+.logo{
+    position:fixed;
+    height: auto;
+    left: 0px;
+    width: 350px;
+    margin-top: 20px;
+}
+nav ul{
+    float: right;
+    margin-right: 122px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 145px;
+    margin: 0 30px;
+}
+nav ul li a{
+    color: white;
+    font-size: 16px;
+    font-family: "Inter", serif;
+    font-weight: bold;
+    padding: 7px;
+}
+nav ul li a.active{
+    background-color: #00bfff;
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+}
+nav ul li a:hover{
+    background-color: #00bfff;
+    color: white;
+    width: 10px;
+    border-radius: 10px;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/* About Me Section */
+.about-section {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    padding-top: 150px;    
+}
+
+.about-section h1 {
+    font-family: 'Jersey 25', sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.about-section h2{
+    font-family: 'Jersey 25', sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+}
+.about-section h3{
+    font-family: 'Jersey 25', sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+}
+.about-section p {
+    font-family: 'Jersey 20', sans-serif;
+    font-size: 22px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+.about-icon {
+  padding: 10px;
+  flex: 50%;
+  display: contents;
+}
+.about-icon li{
+    padding-bottom: 20px
+}
+.about-icon ul {
+    list-style: none;
+    width: 220px;
+    padding-left: 7%;
+    padding-top: 7%;
+}
+.about-icon .circle{
+    width: 41px;
+    height: 35px;
+    border: 2px solid #42CBDE;
+    border-radius: 50%;
+}
+.about-icon .circles{
+    width: 41px;
+    height: 35px;
+    border: 2px solid #42CBDE;
+    border-radius: 50%;
+}
+.about-icon .circle img{
+    display: block;
+    margin-top: 14%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 24px;
+    height: 20px; 
+}
+.about-icon .circles img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 36px;
+    height: 31px; 
+}
+.about-icon .circle:hover{
+    box-shadow: 0px 0px 10px #03CAF1;
+}
+.about-icon .circles:hover{
+    box-shadow: 0px 0px 10px #03CAF1;
+}
+.about-text{
+    width: 656px;
+    padding-top: 38px;
+}
+.about-container{
+    display: flex;
+}
+.about-image {
+    max-width: 100%;
+    height: auto;
+    flex: 50%;
+    padding-left: 45px;
+}
+.about-image img{
+    width: 420px;
+    padding-top: 8px;
+}
+    
+/* Certificates Section */
+.certificates-section {
+    display: flex;
+    flex-direction: row;
+    padding-top: 182px; 
+    padding-bottom: 250px;   
+}
+.certificate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+    max-width: 1000px;
+    margin-left: 81px;
+}
+.certificate img {
+    width: 350px;
+    height: 255px;
+    border-radius: 10px;
+}
+.certificate img:hover{
+    box-shadow: 0px 0px 16px #03CAF1;
+}
+/* Skills Section */
+.skills-section {
+    padding: 200px 20px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.skills-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.skill span{
+    width: 311px;
+    margin-bottom: 10px;
+    padding-top: 8px;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 800;
+
+}
+
+.progress-bar {
+    background-color: transparent;
+    width: 60%;
+    height: 28px;
+    margin-left: 20px;
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #03CAF1;
+    box-shadow: 0px 0px 5px #03CAF1;
+}
+
+.progress {
+    background-color: #00bfff;
+    height: 100%;
+    border-radius: 0px;
+    box-shadow: 0px 0px 5px #03CAF1;
+}
+
+.skill .percentage {
+    margin-left: -113px;
+    font-weight: 200;
+    font-family: 'Jersey 25', sans-serif;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1300px){
+       .about-text{
+        width: 600px;
+       }
+       .certificate{
+        width: 290px;
+       }
+}
+@media (max-width: 1280px){
+      .certificates-section{
+        padding-top: 294px;
+      }
+}
+@media (max-width: 1150px){
+    .about-text{
+        width: 477px;
+    }
+    .certificate img{
+        width: 283px;
+       }
+}
+@media (max-width: 1024px){
+   label.logo{
+    font-size: 19px;
+   }
+   .skills-section{
+    padding-left: 138px;
+    padding-bottom: 100px;
+   }
+   .certificates-section{
+        flex-direction: row-reverse;
+        padding-right: 8px;
+        position: relative;
+        padding-top: 235px;
+   }
+   .skill {
+    flex-direction: row;
+    align-items: center;
+   }
+   .progress-bar {
+    width: 84%;
+    margin-left: 0;
+   }
+   .skill .percentage{
+    padding-left: 72px;
+   }
+   .about-image{
+    padding-left: 0px;
+   }
+   .about-text{
+    width: 425px;
+   }
+   .about-icon ul{
+    padding-top: 221px;
+   }
+}
+@media (max-width: 1000px){
+    .about-text{
+        width: 456px;
+    }
+    .about-section {
+     width: 1190px;
+    }
+    .certificate{
+     width: 283px;
+       }
+    .skills-section{
+    width: 1208px;
+    }
+}
+@media (max-width: 952px){
+    label.logo{
+       font-size: 26px;
+       padding-left: 20px;
+        line-height: 78px;
+    }
+    nav ul li a{
+       font-size: 16px;
+    }
+    .about-image{
+        padding-left: 2px;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 912px){
+    .certificates-section{
+        flex-direction: row;
+    }
+}
+@media (max-width: 858px){
+   .checkbtn{
+       display: block;
+   }
+    nav ul{
+       position: fixed;
+       width: 100%;
+       height: 100vh;
+       background: #2c3e50;
+       top: 80px;
+       left: -100%;
+       text-align: center;
+       transition: all .5s;
+   }
+   nav ul li {
+       display: block;
+       margin: 50px 0;
+       line-height: 30px;
+    }
+    nav ul li a {
+      font-size: 20px;
+    }
+    a:hover,a.active{
+       background: none;
+       color: #0082e6;
+    }
+    #check:checked ~ ul{
+       left: 0;
+    }
+    .about-section{
+        align-items: center;
+        padding-left: 63px;
+    }
+}
+
+@media (max-width: 858px) {
+    .certificates-section{
+        flex-direction: row;
+        align-items: center;
+        padding-top: 358px;
+    }
+    
+    .skill {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .progress-bar {
+        width: 45%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px){
+    .certificates-section{
+        padding-right: 70px;
+        padding-top: 490px;
+    }
+     label .logo{
+        padding-bottom: 10px;
+     }
+}
+@media (max-width: 390px){
+     .checkbtn span{
+        line-height: 10px;
+     }
+}

@@ -79,15 +79,25 @@ nav ul li a:hover {
 }
 
 .box {
-    display: block; 
     padding: 12px; 
     background: rgba(0, 191, 255, 0.1);
     border-radius: 10px; 
     transition: all 0.38s ease;
     max-width: 160px;
     margin: 0 auto; 
-    text-decoration: none; 
     color: inherit; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-end;
+    height: 100%; 
+}
+
+.team-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 10px; 
+    display: block;
 }
 
 .box h3 {
@@ -104,6 +114,7 @@ nav ul li a:hover {
     margin-bottom: 5px; 
     letter-spacing: 1px; 
 }
+
 
 .box:hover {
     transform: translateY(-5px);
