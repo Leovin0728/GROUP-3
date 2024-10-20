@@ -9,6 +9,14 @@ body{
     background-size: 100% 100%; 
     background-attachment: fixed;
 }
+
+.navbar a:hover,
+.navbar a.active {
+    color: rgb(255, 255, 255);
+    background-color: #04c0fa;  
+    border-radius: 10px;
+}
+
 .text-info{
   filter: drop-shadow( 0px 0px 8px #00DBFE);
 }
@@ -31,7 +39,8 @@ body{
 }
 @media screen and (max-width: 991px) {
   .collapse {
-    background-color: #00bfff; 
+    background-color: #012a37; 
+    border-radius: 20px;
   }
   
   .collapse .nav-link {
