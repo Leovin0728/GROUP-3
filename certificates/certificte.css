@@ -1,0 +1,174 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(/10.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 130vh;
+    background-size: 100% auto;
+}
+
+header {
+    background: none !important; /* Ensure no background is applied */
+    width: 100%; /* Ensure the header spans the full width */
+    height: 100px; /* Adjust the height as needed */
+    position: relative; 
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+ 
+
+
+
+.logo-img {
+    height: 80px; /* Adjust the height as needed */
+    margin-top: -30px; /* Move the logo slightly up */
+    display: block; /* Ensures the image behaves like a block element */
+}
+
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.logo {
+    position: absolute;
+    left: 50px; /* Position the logo to the left */
+    top: 50px;  /* Adjust the top position of the logo */
+    font-size: 36px; /* Adjust size of the logo */
+    font-weight: bold; /* Make it bold */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row; /* Stack the links horizontally */
+    position: absolute;
+    right: 50px; /* Align the links to the right side */
+    top: 50px; /* Adjust the top position to align vertically */
+}
+
+.nav-links li {
+    margin: 0 20px; /* Add horizontal spacing between the links */
+}
+
+.nav-links li a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 25px; /* Match the size of the portfolio logo */
+    font-weight: bold; /* Match the weight of the portfolio logo */
+    padding: 12px 20px; /* Add padding to make it look like a button */
+    border-radius: 5px; /* Rounded corners */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+.nav-links li a:hover {
+    box-shadow: 0 0 20px rgb(0, 191, 255), 0 0 40px rgb(0, 191, 255); /* Glowing effect */
+    background-color: rgb(0, 234, 255); /* Optional: Light blue background on hover */
+}
+
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(/10.gif); /* Background GIF */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* Full viewport height */
+}
+
+header {
+    position: fixed; /* Fixed position for the header */
+    top: 0; /* Position at the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Stretch to the right */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10px; /* Padding for the header */
+    z-index: 1000; /* Ensure header is above other content */
+}
+
+nav {
+    display: flex; /* Flexbox for navigation */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Center items vertically */
+}
+
+.nav-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Flexbox for links */
+    gap: 20px; /* Space between links */
+}
+
+.nav-links a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.hero {
+    display: flex; /* Flexbox for hero section */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding-top: 80px; /* Space for fixed header */
+    height: 100vh; /* Full viewport height */
+}
+
+.certificate {
+    display: flex; /* Use flex to center the certificates */
+    flex-direction: column; /* Arrange certificates in a column */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: calc(100vh - 80px); /* Adjust height based on header's height */
+}
+
+.certificates-title {
+    text-align: center; /* Center the title */
+    font-size: 36px; /* Title font size */
+    margin: 30px 0; /* Margin around title */
+}
+
+.certificates-container {
+    display: flex; /* Flexbox for certificate layout */
+    justify-content: center; /* Center certificates */
+    gap: 30px; /* Gap between certificates */
+}
+
+.certificate {
+    background: rgba(245, 8, 8, 0); /* Slightly transparent white background */
+    border-radius: 50px; /* Rounded corners */
+    padding: 10px; /* Padding to keep it neat */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0); /* Glowing shadow effect */
+    max-width: 1500px; /* Increased max width for certificates */
+}
+
+.certificates-container img {
+    max-width: 100%; /* Keep image within certificate bounds */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+footer {
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Distance from the bottom */
+    left: 20px; /* Distance from the left */
+}
