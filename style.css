@@ -9,7 +9,7 @@
 }
 body {
     margin: 0;
-    background: rgba(0, 0, 0, 0.6) url("BG.gif") no-repeat center center;
+    background: rgba(0, 0, 0, 0.6) url("images/BG.gif") no-repeat center center;
     background-size: 100% 120%;
     background-attachment: fixed;
     background-blend-mode: darken;
