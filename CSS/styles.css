@@ -8,13 +8,27 @@ body{
     background: rgba(0, 0, 0, 0.8) url(/Images/BG.gif) no-repeat;
     background-size: 100% 100%; 
     background-attachment: fixed;
+    position: relative;
+    overflow: auto;
+}
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.text-section{
+  position: relative;
 }
 
 .navbar-nav a:hover,
 .navbar-nav a.active {
-    color: rgb(255, 255, 255);
-    background-color: #04c0fa;  
-    border-radius: 10px;
+  color: rgb(255, 255, 255);
+  background-color: #04c0fa;  
+  border-radius: 10px;
 }
 
 .text-info{
