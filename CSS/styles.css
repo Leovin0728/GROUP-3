@@ -184,7 +184,7 @@ section{
 
 video#gif{
     font-family: 'jersey 25', sans-serif;
-    background:  rgba(0, 0, 0, 0.5) url(IMAGES/BG.gif) no-repeat center center;
+    background:  rgba(0, 0, 0, 0.5) url(../IMAGES/BG.gif) no-repeat center center;
     background-size: 100% 120%;
     background-attachment: fixed;
     background-blend-mode: darken;
@@ -243,10 +243,11 @@ span{
 
 .img-fluid{
     max-width: 45%; 
-    filter: brightness(1.1);
+    filter: brightness(1);
     filter: drop-shadow(0px 4px 10px #04E6FF);
     height: auto;
     animation: floatImage 4s ease-in-out infinite;
+    border-radius: 130px;
 }
 
 @keyframes floatImage{
@@ -265,7 +266,8 @@ span{
 .about-content p{
     font-family: 'Roboto Slab';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
+  
 }
 
 .social-media a {
@@ -395,7 +397,7 @@ span{
     }
 
     .img-fluid{
-        max-width: 60%; 
+        max-width: 55%; 
     }
 }
 
