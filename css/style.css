@@ -17,13 +17,13 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
-
+    padding-right: 10;
 }
 
 /* Background Video */
 video#background-video {
     font-family: 'jersy 25', sanserif;
-    background: rgba(0, 0, 0, 0.6) url(video.gif) no-repeat center center;
+    background: rgba(0, 0, 0, 0.6) url(video/video.gif) no-repeat center center;
     background-size: 100% 120%;
     background-attachment: fixed;
     background-blend-mode: darken;
@@ -50,13 +50,23 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+
 }
 #nav-list {
-    list-style: none;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
     
 }
-#nav-list{
-    margin-left: 20px;
+#nav-list li{
+    display: inline-block;
+}
+#nav-list li a {
+    text-decoration: none;
+    color:hsla(210, 14%, 95%, 0.941);
+    font-size: 16px;
 }
 
 nav ul {
@@ -66,7 +76,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin-left: auto;
 }
 
 nav ul li a {
@@ -103,7 +113,8 @@ nav img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0;
+    width: 50%;
+    padding: 0px 0;
 }
 
 #home {
@@ -112,17 +123,8 @@ nav img {
     padding: 100px 0;
 }
 
-.home-text h1 {
-    font-size: 3em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.home-text p {
-    font-size: 1.2em;
-}
 .home-text {
-    width: 50%;
+    width: 5px;
 }
 
 .home-text span {
@@ -138,7 +140,7 @@ nav img {
 }
 
 .home-content {
-    max-width: 600px;
+    max-width: 60px;
 }
 .home-content h1 {
     font-size: 20px;
@@ -147,6 +149,10 @@ nav img {
 .home-content h3{
     font-size: 16px;
 }
+.home-text p {
+    font-size: 1.2em;
+}
+
 .home-content .btn-box {
     width: 300px;
     height: 50;
