@@ -1,52 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PORTFOLIO</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/CSS/home.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NexGen3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        * {
+          padding: 0;
+          margin: 0;
+        }
+       body{
+        background: url(/Images/BG.gif);
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        position: relative;
+        overflow: hidden;
+       }
+       .home::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+       }
+      
+       .par {
+        position: relative; 
+       }
+
+      .navbar-nav a:hover,
+      .navbar-nav a.active {
+            color: rgb(255, 255, 255);
+            background-color: #04c0fa;  
+            border-radius: 10px;
+        }
+       .big{
+          background: #181818;
+          filter: drop-shadow( 0px 5px 9px #00DBFE);
+          border-radius: 10px;
+        }
+        .GP img{
+          filter: drop-shadow( 0px 0px 9px #00DBFE);
+        }
+    </style>
   </head>
   <body>
-    <header class="header">
-      <nav class="navbar navbar-style">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micron">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+    <div  class="" >
+        <nav class="navbar fixed-top navbar-expand-lg ">
+          <div class="container mt-4">
+            <a class="navbar-brand fs-5 fw-bold" id="nameTag" target="_blank" href="/HOME.html"><img src="/IMAGES/LOGO.png" height="60px"></a>
+            <button
+              id="toggler-button"
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo02"
+              aria-controls="navbarTogglerDemo02"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
             </button>
-
-            <a href="home.html" height><img class="logo"  src="/Images/LOGO.png"></a>
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5 gap-2 ">
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="/HOME.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="/pages/aboutus.html">Our Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="/pages/contact.html">Contacts</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="collapse navbar-collapse" id="micron">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="/home.html" class="active">HOME</a></li>
-              <li><a href="/pages/aboutus.html">OUR TEAM</a></li>
-              <li><a href="/pages/contacts.html">CONTACTS US</a></li>
-            </ul>
+        </nav>
+      </div>
+
+      <div class="home container text-start " style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <div class="row text-white" >
+          <div class="col-sm-5 col-md-5 ">
+            <div class="big container text-center py-1 mt-5 mb-5">
+              <h1>Welcome to the<span class=" text-info"> NxtGen3!</span></h1>
+            </div>
+            <div class="par container text-center" style="margin-top:60px; font-size: 1.2rem;">
+              <p>We are a team of experts offering different types of services, both online and in person. Whether you need help with digital work or hands-on tasks, we are here for you. Explore our site to see how we can support your business and help you reach your goals.</p>
+            </div>
+          </div>
+          <div class="GP col-sm-5 offset-sm-2 col-md-6 offset-md-0 ms-5">
+            <img src="/Images/homepic.png" width="600px" style="border-radius: 20px;">
+            
           </div>
         </div>
-      </nav>
-    </header>
-
-    <main>
-      <section class="content">
-        <div class="blur-box">  
-          <div class="text-section">
-            <h1>Welcome to the <span class="highlight">NextGen3</span> website!</h1>
-
-            <p>
-              We are a team of experts offering different types of services, both online and in person. Whether you need help with digital work or hands-on tasks, we are here for you. Explore our site to see how we can support your business and help you reach your goals.
-            </p>
-          </div>
-        </div>
-      </section>
-
+      </div>
       
-    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
