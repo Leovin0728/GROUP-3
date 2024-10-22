@@ -10,8 +10,8 @@ body{
     background-attachment: fixed;
 }
 
-.navbar a:hover,
-.navbar a.active {
+.navbar-nav a:hover,
+.navbar-nav a.active {
     color: rgb(255, 255, 255);
     background-color: #04c0fa;  
     border-radius: 10px;
