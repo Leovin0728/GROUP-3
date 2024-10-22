@@ -46,7 +46,7 @@ p{
 }
 .me{
   filter: drop-shadow( 0px 0px 8px #00DBFE);
-}
+} 
 .social-icons {
   display: flex;
   flex-direction: column;
