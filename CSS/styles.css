@@ -68,11 +68,11 @@ body{
   }
   .social-icons {
     margin: -100px;
-    transform: translateY(270%) translateX(20%);
+    transform: translateY(420%) translateX(30%);
   }
   .seemore .social-icons{
     margin: -180px;
-    transform: translateY(320%) translateX(30%); 
+    transform: translateY(550%) translateX(34%); 
   }
   .Certificates{
     margin: -200px;
