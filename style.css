@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    box-sizing: border-box;
     text-decoration: none;
     
 }
@@ -76,7 +75,8 @@ nav ul li a:hover{
     display: flex;
     flex-direction: row;
     font-size: 30px;
-    padding-top: 150px;    
+    padding-top: 150px;
+    width: 100%;    
 }
 
 .about-section h1 {
@@ -101,6 +101,7 @@ nav ul li a:hover{
     font-size: 22px;
     margin: 20px auto;
     max-width: 800px;
+    width: 100%;
 }
 .about-icon {
   padding: 10px;
@@ -112,9 +113,9 @@ nav ul li a:hover{
 }
 .about-icon ul {
     list-style: none;
-    width: 220px;
+    width: 17%;
     padding-left: 7%;
-    padding-top: 7%;
+    padding-top: 9%;
 }
 .about-icon .circle{
     width: 41px;
@@ -150,7 +151,7 @@ nav ul li a:hover{
     box-shadow: 0px 0px 10px #03CAF1;
 }
 .about-text{
-    width: 656px;
+    width: 100%;
     padding-top: 38px;
 }
 .about-container{
@@ -163,7 +164,7 @@ nav ul li a:hover{
     padding-left: 45px;
 }
 .about-image img{
-    width: 420px;
+    width: 89%;
     padding-top: 8px;
 }
 .btn button{
@@ -186,19 +187,20 @@ nav ul li a:hover{
     display: flex;
     flex-direction: row;
     padding-top: 182px; 
-    padding-bottom: 250px;   
+    padding-bottom: 250px;  
+    padding-left: 95px; 
 }
+
 .certificate {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex: 50%;
     margin-bottom: 30px;
-    max-width: 1000px;
-    margin-left: 81px;
 }
 .certificate img {
-    width: 350px;
-    height: 255px;
+    width: 85%;
+    height: auto;
     border-radius: 10px;
 }
 .certificate img:hover{
@@ -258,93 +260,18 @@ nav ul li a:hover{
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 1300px){
-       .about-text{
-        width: 600px;
-       }
-       .certificate{
-        width: 290px;
-       }
-}
-@media (max-width: 1280px){
-      .certificates-section{
-        padding-top: 294px;
-      }
-}
-@media (max-width: 1150px){
-    .about-text{
-        width: 477px;
-    }
-    .certificate img{
-        width: 283px;
-       }
-}
-@media (max-width: 1024px){
-   label.logo{
-    font-size: 19px;
-   }
-   .skills-section{
-    padding-left: 138px;
-    padding-bottom: 100px;
-   }
-   .certificates-section{
-        flex-direction: row-reverse;
-        padding-right: 8px;
-        position: relative;
-        padding-top: 235px;
-   }
-   .skill {
-    flex-direction: row;
-    align-items: center;
-   }
-   .progress-bar {
-    width: 84%;
-    margin-left: 0;
-   }
-   .skill .percentage{
-    padding-left: 72px;
-   }
-   .about-image{
-    padding-left: 0px;
-   }
+@media (max-width: 1220px){
    .about-text{
-    width: 425px;
+    width: 100%;
    }
-   .about-icon ul{
-    padding-top: 221px;
+   .about-image img{
+    width: 100%;
+    padding-left: 5px;
    }
 }
-@media (max-width: 1000px){
-    .about-text{
-        width: 456px;
-    }
-    .about-section {
-     width: 1190px;
-    }
-    .certificate{
-     width: 283px;
-       }
-    .skills-section{
-    width: 1208px;
-    }
-}
-@media (max-width: 952px){
-    label.logo{
-       font-size: 26px;
-       padding-left: 20px;
-        line-height: 78px;
-    }
-    nav ul li a{
-       font-size: 16px;
-    }
+@media (max-width: 1050px){
     .about-image{
-        padding-left: 2px;
-        margin-top: 20px;
-    }
-}
-@media (max-width: 912px){
-    .certificates-section{
-        flex-direction: row;
+        padding-top: 70px;
     }
 }
 @media (max-width: 858px){
@@ -376,41 +303,191 @@ nav ul li a:hover{
     #check:checked ~ ul{
        left: 0;
     }
+    .certificates-section {
+        flex-direction: column;
+        text-align: center;
+    }
     .about-section{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-icon ul li{
+        display: flex;
+        flex-direction: row;
         align-items: center;
-        padding-left: 63px;
+    }
+    .about-icon ul{
+        display: flex;
+        padding-left: 274px;
+    }
+    .about-icon ul li{
+        padding-left: 30px;
+    }
+    .percentage {
+        margin-top: 20px;
+    }
+    .skill span{
+        padding-bottom: 15px;
+        padding-left: 40px;
+    }
+    .about-text{
+        width: 90%;
+        padding-left: 62px;
+    }
+    .certificate img{
+        width: 60%;
+        margin-left: 60px;
+    }
+    .about-image img{
+        width: 60%;
     }
 }
 
-@media (max-width: 858px) {
-    .certificates-section{
-        flex-direction: row;
-        align-items: center;
-        padding-top: 358px;
+@media (max-width: 768px) {
+    .certificates-section {
+        flex-direction: column;
+        text-align: center;
     }
-    
-    .skill {
-        flex-direction: row;
-        align-items: center;
+    .skills-section{
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .progress-bar {
-        width: 45%;
+        width: 100%;
+        height: 23px;
         margin-left: 0;
+    }
+
+    .percentage {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    .logo{
+        width: 50%;
+    }
+
+}
+@media (max-width: 720px){
+    .about-icon ul li{
+        transform: translate(-74%, 14%);
+    }
+}
+@media (max-width: 600px){
+    .about-icon{
+        height: 200px;
+        position: relative;
+    }
+    .about-icon ul li{
+        transform: translate(-131%, 30%);
+    }
+    .percentage {
+        margin-top: 20px;
+    }
+    .skill span{
+        padding-bottom: 15px;
+    }
+    span .percentage{
+        padding-left: 40px;
+    }
+}
+@media (max-width: 500px){
+    .about-icon ul li{
+        transform: translate(-208%, 38%);
+    }
+    .skills-container{
+        flex-direction: column ;
+        align-items: center;
+    }
+    span{
+        width: 100%;
+    }
+    span .percentage{
+        padding-left: 40px;
+    }
+    .certificate img{
+        padding-right: 3px;
+    }
+}
+@media (max-width: 460px){
+        .about-icon ul{
+            transform:  translate(-13%, -20%);
+        }
+    .skills-container{
+        display: flex;
+    }
+    .skill{
+        flex-direction: column;
+        text-align: center;
+    }
+    .skill span{
+        font-size: 18px;
+    }
+    .skill .percentage{
+        padding-left: 37%;
+    }
+    .skill .progress{
+        width: 49%;
+    }
+}
+@media (max-width: 420px){
+    .about-icon ul{
+        transform: translate(-14%, 25%);
+    }
+    .progress-bar{
+        width: 80%;
+    }
+    span .percentage{
+        padding-left: 40px;
+    }
+    .certificate{
+        padding-right: 40px;
+        width: 95%;
+    }
+    .about-text p{
+        font-size: 13px;
+    }
+    .about-text h3{
+        font-size: 24px;
+    }
+    .about-text h1{
+        font-size:  26px;
+    }
+    .about-text h2{
+        font-size: 18px;
+    }
+    .about-image img{
+        width: 70%;
+    }
+    .skill span{
+        font-size: 15px;
+    }
+    .btn button{
+        width: 110px;
+        height: 38px;
+        font-size: 12px;
+    }
+
+}
+@media (max-width: 340px){
+    .certificate img{
+        padding-right: 38px;
+    }
+    .about-icon ul{
+        transform:  translate(-17%, -20%);
+    }
+}
+@media (max-width: 300px)
+{
+    .about-icon ul li{
+        transform: translate(-257%, 60%);
+    }
+    .certificate img{
+        width: 113%;
+        margin-left: 0px;
+    }
+    .skill span{
+        font-size: 13px;
     }
 }
 
-@media (max-width: 480px){
-    .certificates-section{
-        padding-right: 70px;
-        padding-top: 490px;
-    }
-     label .logo{
-        padding-bottom: 10px;
-     }
-}
-@media (max-width: 390px){
-     .checkbtn span{
-        line-height: 10px;
-     }
-}
