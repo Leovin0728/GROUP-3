@@ -52,6 +52,9 @@
         }
 
         @media (max-width: 990px) {      
+          body{
+            position: relative;
+          }
           .collapse {
               background-color: #012a37; 
               border-radius: 20px;
@@ -70,24 +73,66 @@
           .GP img {
             width: 300px; 
           }
+          
         }
 
         @media (max-width: 1167px) {
+          
           .GP{
             margin-top: 100px;
           }
         }
+        @media (max-width: 1155px) {
+          body {
+            position: relative;
+          }
+          body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
 
-        @media (max-width: 768px) {
+          }
+        }
 
-            .GP {
-                margin-top: auto; 
-            }
+        @media (max-width: 628px) {
+          
+          body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
 
-            .GP img {
-                width: 300px; 
-                margin-left: 35px; 
-            }
+          }
+          .home{
+            padding-top: 100px;
+          }
+          
+          .GP img{
+            width: 280px;
+          }
+        }
+        @media (max-width: 622px) {
+          .home{
+            margin-top: -40px;
+          }
+          .GP{
+            width: 0;
+          }
+          .GP img{
+            margin-top: -100px;
+          }
+        }
+        @media (max-width: 390px){
+          .home{
+            margin-top: 0;
+          }
         }
         
     </style>

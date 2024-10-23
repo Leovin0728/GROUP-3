@@ -77,8 +77,14 @@ p{
       transform: translateY(0);
   }
 }
+@media (max-width: 1220px){
+  .text-section{
+   width: 100%;
+  }
 
-@media screen and (max-width: 991px) {
+}
+
+@media (max-width: 991px) {
   .collapse {
     background-color: #012a37; 
     border-radius: 20px;
@@ -91,24 +97,75 @@ p{
     margin-left: 50px;
   }
   .social-icons {
-    margin: -100px;
-    transform: translateY(420%) translateX(30%);
+    transform: translateY(420%);
+    align-items: center; 
   }
   .seemore .social-icons{
-    margin: -180px;
-    transform: translateY(550%) translateX(34%); 
+    transform: translateY(550%); 
+    align-items: center; 
   }
-  .Certificates{
-    margin: -200px;
+
+}
+@media (max-width: 512px) {
+  body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .social-icons {
+    position: relative; 
+    align-items: center; 
+  }
+  .seemore .social-icons{
+    transform: translateY(500%);
+  }
+}
+
+@media (max-width: 376px){
+
+  .social-icons{
+    align-items: start; 
+    margin-left: 50px;
+  }
+  .seemore .me{
+    margin-left: 150px;
+  }
+  .seemore .social-icons{
+    transform: translateY(530%);
+    margin-left: 150px;
+
+  }
+  .seemore .text-section{
+    width: 200%;
     
   }
-  .Certificates .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    gap: 20px; 
+
+  .proj .col { /* Each column takes 50% of the width (2 per row) */
+    max-width: 90%; /* Prevents stretching beyond half the width */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
   }
-  .Certificates .row img{
-    width: 250px;
+  .aboutme{
+    margin-left: 150px;
+    width: 100%;
+  }
+  .seemore,
+  .Certificates {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    margin: 0 auto; 
+    max-width: 80%; 
+
+  }
+  .skills{
+    margin-left: 250px;
+    width: 150%;
   }
 }
