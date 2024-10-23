@@ -23,7 +23,7 @@ body {
 /* Background Video */
 video#background-video {
     font-family: 'jersy 25', sanserif;
-    background: rgba(0, 0, 0, 0.6) url(video/video.gif) no-repeat center center;
+    background: rgba(0, 0, 0, 0.6) url(../background/video.gif) no-repeat center center;
     background-size: 100% 120%;
     background-attachment: fixed;
     background-blend-mode: darken;
