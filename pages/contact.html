@@ -49,10 +49,22 @@
         padding: 20px; 
         filter: drop-shadow(0px 0px 10px #00DBFE);
       }
-      @media screen {
-          .navbar {
-            background-color: #181818;
-          }
+      @media  (max-width: 990px) {
+            .collapse {
+              background-color: #012a37; 
+              border-radius: 20px;
+            }
+            
+            .collapse .nav-link {
+              color: white; 
+            }
+            .home {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center; 
+                height: 100vh; 
+            }
         }
     </style>
   </head>
