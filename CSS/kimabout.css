@@ -1,0 +1,493 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+}
+body {
+    margin: 0;
+    background: rgba(0, 0, 0, 0.6) url("/Images/BG.gif") no-repeat center center;
+    background-size: 100% 120%;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    color: white;
+}
+
+nav{
+    background: transparent;
+    height: 80px;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+}
+.logo{
+    position:fixed;
+    height: auto;
+    left: 0px;
+    width: 350px;
+    margin-top: 20px;
+}
+nav ul{
+    float: right;
+    margin-right: 122px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 145px;
+    margin: 0 30px;
+}
+nav ul li a{
+    color: white;
+    font-size: 16px;
+    font-family: "Inter", serif;
+    font-weight: bold;
+    padding: 7px;
+}
+nav ul li a.active{
+    background-color: #00bfff;
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+}
+nav ul li a:hover{
+    background-color: #00bfff;
+    color: white;
+    width: 10px;
+    border-radius: 10px;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/* About Me Section */
+.about-section {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    padding-top: 150px;
+    width: 100%;    
+}
+
+.about-section h1 {
+    font-family: 'Jersey 25', sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.about-section h2{
+    font-family: 'Jersey 25', sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+}
+.about-section h3{
+    font-family: 'Jersey 25', sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+}
+.about-section p {
+    font-family: 'Jersey 20', sans-serif;
+    font-size: 22px;
+    margin: 20px auto;
+    max-width: 800px;
+    width: 100%;
+}
+.about-icon {
+  padding: 10px;
+  flex: 50%;
+  display: contents;
+}
+.about-icon li{
+    padding-bottom: 20px
+}
+.about-icon ul {
+    list-style: none;
+    width: 17%;
+    padding-left: 7%;
+    padding-top: 9%;
+}
+.about-icon .circle{
+    width: 41px;
+    height: 35px;
+    border: 2px solid #42CBDE;
+    border-radius: 50%;
+}
+.about-icon .circles{
+    width: 41px;
+    height: 35px;
+    border: 2px solid #42CBDE;
+    border-radius: 50%;
+}
+.about-icon .circle img{
+    display: block;
+    margin-top: 14%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 24px;
+    height: 20px; 
+}
+.about-icon .circles img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 36px;
+    height: 31px; 
+}
+.about-icon .circle:hover{
+    box-shadow: 0px 0px 10px #03CAF1;
+}
+.about-icon .circles:hover{
+    box-shadow: 0px 0px 10px #03CAF1;
+}
+.about-text{
+    width: 100%;
+    padding-top: 38px;
+}
+.about-container{
+    display: flex;
+}
+.about-image {
+    max-width: 100%;
+    height: auto;
+    flex: 50%;
+    padding-left: 45px;
+}
+.about-image img{
+    width: 89%;
+    padding-top: 8px;
+}
+.btn button{
+    width: 165px;
+    height: 45px;
+    background-color: #03CAF1;
+    border-radius: 15px;
+    border: none;
+    font-size: 22px;
+    font-weight: 200;
+    font-family: 'Jersey 25', sans-serif;
+    color: #FFFFFF;
+}
+.btn button:hover{
+    box-shadow: 0px 0px 16px #03CAF1;
+    color: #FFFFFF;
+}
+/* Certificates Section */
+.certificates-section {
+    display: flex;
+    flex-direction: row;
+    padding-top: 182px; 
+    padding-bottom: 250px;  
+    padding-left: 95px; 
+}
+
+.certificate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 50%;
+    margin-bottom: 30px;
+}
+.certificate img {
+    width: 85%;
+    height: auto;
+    border-radius: 10px;
+}
+.certificate img:hover{
+    box-shadow: 0px 0px 16px #03CAF1;
+}
+/* Skills Section */
+.skills-section {
+    padding: 200px 20px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.skills-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.skill span{
+    width: 311px;
+    margin-bottom: 10px;
+    padding-top: 8px;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 800;
+
+}
+
+.progress-bar {
+    background-color: transparent;
+    width: 60%;
+    height: 28px;
+    margin-left: 20px;
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #03CAF1;
+    box-shadow: 0px 0px 5px #03CAF1;
+}
+
+.progress {
+    background-color: #00bfff;
+    height: 100%;
+    border-radius: 0px;
+    box-shadow: 0px 0px 5px #03CAF1;
+}
+
+.skill .percentage {
+    margin-left: -113px;
+    font-weight: 200;
+    font-family: 'Jersey 25', sans-serif;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1220px){
+   .about-text{
+    width: 100%;
+   }
+   .about-image img{
+    width: 100%;
+    padding-left: 5px;
+   }
+}
+@media (max-width: 1050px){
+    .about-image{
+        padding-top: 70px;
+    }
+}
+@media (max-width: 858px){
+   .checkbtn{
+       display: block;
+   }
+    nav ul{
+       position: fixed;
+       width: 100%;
+       height: 100vh;
+       background: #2c3e50;
+       top: 80px;
+       left: -100%;
+       text-align: center;
+       transition: all .5s;
+   }
+   nav ul li {
+       display: block;
+       margin: 50px 0;
+       line-height: 30px;
+    }
+    nav ul li a {
+      font-size: 20px;
+    }
+    a:hover,a.active{
+       background: none;
+       color: #0082e6;
+    }
+    #check:checked ~ ul{
+       left: 0;
+    }
+    .certificates-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-section{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-icon ul li{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .about-icon ul{
+        display: flex;
+        padding-left: 274px;
+    }
+    .about-icon ul li{
+        padding-left: 30px;
+    }
+    .percentage {
+        margin-top: 20px;
+    }
+    .skill span{
+        padding-bottom: 15px;
+        padding-left: 40px;
+    }
+    .about-text{
+        width: 90%;
+        padding-left: 62px;
+    }
+    .certificate img{
+        width: 60%;
+        margin-left: 60px;
+    }
+    .about-image img{
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .certificates-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .skills-section{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .progress-bar {
+        width: 100%;
+        height: 23px;
+        margin-left: 0;
+    }
+
+    .percentage {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    .logo{
+        width: 50%;
+    }
+
+}
+@media (max-width: 720px){
+    .about-icon ul li{
+        transform: translate(-74%, 14%);
+    }
+}
+@media (max-width: 600px){
+    .about-icon{
+        height: 200px;
+        position: relative;
+    }
+    .about-icon ul li{
+        transform: translate(-131%, 30%);
+    }
+    .percentage {
+        margin-top: 20px;
+    }
+    .skill span{
+        padding-bottom: 15px;
+    }
+    span .percentage{
+        padding-left: 40px;
+    }
+}
+@media (max-width: 500px){
+    .about-icon ul li{
+        transform: translate(-208%, 38%);
+    }
+    .skills-container{
+        flex-direction: column ;
+        align-items: center;
+    }
+    span{
+        width: 100%;
+    }
+    span .percentage{
+        padding-left: 40px;
+    }
+    .certificate img{
+        padding-right: 3px;
+    }
+}
+@media (max-width: 460px){
+        .about-icon ul{
+            transform:  translate(-13%, -20%);
+        }
+    .skills-container{
+        display: flex;
+    }
+    .skill{
+        flex-direction: column;
+        text-align: center;
+    }
+    .skill span{
+        font-size: 18px;
+    }
+    .skill .percentage{
+        padding-left: 37%;
+    }
+    .skill .progress{
+        width: 49%;
+    }
+}
+@media (max-width: 420px){
+    .about-icon ul{
+        transform: translate(-14%, 25%);
+    }
+    .progress-bar{
+        width: 80%;
+    }
+    span .percentage{
+        padding-left: 40px;
+    }
+    .certificate{
+        padding-right: 40px;
+        width: 95%;
+    }
+    .about-text p{
+        font-size: 13px;
+    }
+    .about-text h3{
+        font-size: 24px;
+    }
+    .about-text h1{
+        font-size:  26px;
+    }
+    .about-text h2{
+        font-size: 18px;
+    }
+    .about-image img{
+        width: 70%;
+    }
+    .skill span{
+        font-size: 15px;
+    }
+    .btn button{
+        width: 110px;
+        height: 38px;
+        font-size: 12px;
+    }
+
+}
+@media (max-width: 340px){
+    .certificate img{
+        padding-right: 38px;
+    }
+    .about-icon ul{
+        transform:  translate(-17%, -20%);
+    }
+}
+@media (max-width: 300px)
+{
+    .about-icon ul li{
+        transform: translate(-257%, 60%);
+    }
+    .certificate img{
+        width: 113%;
+        margin-left: 0px;
+    }
+    .skill span{
+        font-size: 13px;
+    }
+}
+
