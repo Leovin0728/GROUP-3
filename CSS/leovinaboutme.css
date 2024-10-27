@@ -77,14 +77,7 @@ p{
       transform: translateY(0);
   }
 }
-@media (max-width: 1220px){
-  .text-section{
-   width: 100%;
-  }
-
-}
-
-@media (max-width: 991px) {
+@media(max-width:769px){
   .collapse {
     background-color: #012a37; 
     border-radius: 20px;
@@ -96,76 +89,65 @@ p{
   .nav-item{
     margin-left: 50px;
   }
-  .social-icons {
-    transform: translateY(420%);
-    align-items: center; 
-  }
-  .seemore .social-icons{
-    transform: translateY(550%); 
-    align-items: center; 
-  }
-
-}
-@media (max-width: 512px) {
-  body::before{
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-  .social-icons {
-    position: relative; 
-    align-items: center; 
-  }
-  .seemore .social-icons{
-    transform: translateY(500%);
+  .proj {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
   }
 }
 
-@media (max-width: 376px){
-
-  .social-icons{
-    align-items: start; 
-    margin-left: 50px;
+@media (max-width: 426px) {
+  
+  .proj iframe {
+    width: 80px;
+    height: 65px;
   }
-  .seemore .me{
-    margin-left: 150px;
+  .cert{
+    flex-direction: column;
+    width: 80%; 
+
+  }
+  .aboutme .social-icons{
+    transform: translateY(530%);
+    padding-left: 20px;
   }
   .seemore .social-icons{
     transform: translateY(530%);
-    margin-left: 150px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 3750px){
+  .proj iframe {
+    width: 80px;
+    height: 65px;
+  }
+  #Certificates img {
+    width: 100%; 
+  }
+  .aboutme .social-icons{
+    transform: translateY(530%);
+    padding-left: 20px;
+  }
+  .seemore .social-icons{
+    transform: translateY(530%);
+    padding-left: 20px;
+  }
+}
 
+@media (max-width: 320px) {
+  .aboutme .social-icons{
+    transform: translateY(530%);
+    padding-left: 20px;
   }
-  .seemore .text-section{
-    width: 200%;
-    
+  .seemore .social-icons{
+    transform: translateY(530%);
+    padding-left: 20px;
   }
-
-  .proj .col { /* Each column takes 50% of the width (2 per row) */
-    max-width: 90%; /* Prevents stretching beyond half the width */
-    box-sizing: border-box; /* Ensures padding and border are included in the width */
+  .proj iframe {
+    width: 80px;
+    height: 65px;
   }
-  .aboutme{
-    margin-left: 150px;
-    width: 100%;
-  }
-  .seemore,
-  .Certificates {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    text-align: center; 
-    margin: 0 auto; 
-    max-width: 80%; 
-
-  }
-  .skills{
-    margin-left: 250px;
-    width: 150%;
+  #Certificates img {
+    width: 100%; 
   }
 }
