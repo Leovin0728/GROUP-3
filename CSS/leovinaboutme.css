@@ -89,11 +89,20 @@ p{
   .nav-item{
     margin-left: 50px;
   }
+  .aboutme .social-icons{
+    transform: translateY(530%);
+    padding-left: 40%
+  }
+  .seemore .social-icons{
+    transform: translateY(530%);
+    padding-left: 40%;
+  }
   .proj {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     
   }
+
 }
 
 @media (max-width: 426px) {
@@ -115,24 +124,12 @@ p{
     transform: translateY(530%);
     padding-left: 20px;
   }
-}
-@media (max-width: 3750px){
-  .proj iframe {
-    width: 80px;
-    height: 65px;
-  }
   #Certificates img {
-    width: 100%; 
-  }
-  .aboutme .social-icons{
-    transform: translateY(530%);
-    padding-left: 20px;
-  }
-  .seemore .social-icons{
-    transform: translateY(530%);
-    padding-left: 20px;
+    width: 90%; 
+    margin-bottom: 20px;
   }
 }
+
 
 @media (max-width: 320px) {
   .aboutme .social-icons{
@@ -146,8 +143,5 @@ p{
   .proj iframe {
     width: 80px;
     height: 65px;
-  }
-  #Certificates img {
-    width: 100%; 
   }
 }
